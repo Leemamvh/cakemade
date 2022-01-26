@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*=======base==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+    outline: none;
+    transition: all .2s linear;
+    border: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+:root {
+    /*=====colors=======*/
+    --first-color: #ba6e24;
+    --first-color-alt: #002c3d;
+    --text-color: #6e6a6d;
+    --text-color-light: #ebecee;
+    --title-color: #212121;
+    --body-color: #f4f4f4;
+    --container-color: #f1f1f1;
+    --border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    --border-radius-hover:4% 95% 6% 95%/95% 4% 92% 5%;
+    --border:.2rem solid var(--first-color-alt);
+    --border-hover:.2rem dashed var(--first-color-alt);
+}
+/*===============body*/
+
+/*============section===========*/
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .05rem var(--first-color);
+    text-align: center;
+    letter-spacing: .2rem;
+    pointer-events: none;
+    position: relative;
+}
+.heading span{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    color: var(--first-color-alt);
+    font-size: 3rem;
+}
+/*============buttons===========*/
+.btn{
+    color: var(--title-color);
+    padding: .9rem 1rem;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    background:none;
+    font-size: 1.8rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0;
+}
+.btn:hover{
+    border: var(--border-hover);
+}
+
+
+
+
+/*===============header======================*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 6%;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background: var(--container-color);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+header.sticky {
+    background: #fff;
+    padding: 10px 50px;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.05);
+}
+header .logo {
+    color: #3b1f03;
+    font-weight: 700;
+    font-size: 2.3rem;
+    font-family: "lobster", "cursive";
+}
+header.sticky .logo {
+    color: #212121;
+}
+header .logo span{
+    color: var(--first-color);
+}
+
+header .navbar a {
+    color: var(--title-color);
+    font-size: 1.7rem;
+    margin: 0 1rem;
+}
+header .navbar a:hover{
+    color: var(--first-color-alt);
+}
+header.sticky .navbar a {
+    color: #212121;
+}
+#mn-btn{
+    font-size: 5rem;
+    color: var(--first-color);
+    cursor: pointer;
+    display: none;
+}
+header .btn{
+    margin-top: 0;
+}
+
+/*======================home main========*/
+.home{
+    padding-top: 10rem;
+    background:url("../images/bakery.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.home .rw{
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+}
+.home .rw .content  {
+    flex:1 1 30rem;
+}
+
+.home .rw .content h3{
+    font-size:9.5rem;
+    line-height: 1.5;
+    color: var(--first-color);
+    text-transform: uppercase;
+    font-family: "lobster";
+   
+}
+
+/*============about===========*/
+.about .rw{
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+}
+.about .rw .image {
+    flex: 1 1 35rem;
+}
+.about .rw .image img {
+    width: 100%;
+    animation: aboutImage 4s linear infinite;
+}
+@keyframes aboutImage {
+    0%, 100%{
+        transform: scale(.9);
+        border-radius: var(--border-radius-hover);
+    }
+    50%{
+        transform: scale(.8);
+        border-radius: var(--border-radius);
+    }
+}
+.about .rw .content {
+    flex: 1 1 35rem;
+}
+.about .rw .content .title {
+    line-height: 1.8;
+    color: var(--first-color-alt);
+    font-size: 3rem;
+}
+.about .rw .content p {
+    line-height: 1.8;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.about .rw .content .icons-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+   padding-top: 3rem;
+}
+.about .rw .content .icons-container .icons {
+   flex: 1 1 15rem;
+   padding: 1.5rem;
+   text-align: center;
+   border: var(--border);
+   border-radius: var(--border-radius);
+}
+.about .rw .content .icons-container .icons h3 {
+   font-size: 1.7rem;
+   padding-top: 1rem ;
+   color: var(--first-color-alt);
+}
+.about .rw .content .icons-container .icons img{
+    height: 5rem;
+}
+
+
+/*============menu===========*/
+.menu{
+    background: url(../images/frame.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu .box-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+   justify-content: center;
+}
+.menu .box-container .box{
+   flex: 1 1 35rem;
+   padding: 1rem;
+   border: var(--border);
+   border-radius: var(--border-radius);
+   display: flex;
+   align-items: center;
+   margin-left: 4rem;
+   gap: 1.5rem;
+}
+.menu .box-container .box:hover{
+   border-radius: var(--border-radius-hover);
+}
+.menu .box-container .box img{
+    height: 6rem;
+    margin-left: -4rem;
+}
+.menu .box-container .box .content h3{
+    font-size: 2.2rem;
+    color: var(--title-color);
+    line-height: 1.8;
+}
+.menu .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+.menu .box-container .box .content span{
+    font-size: 2rem;
+    color: var(--title-color);
+    line-height: 1.8;
+}
+
+
+
+
+/*============reservation===========*/
+
+.reserve{
+    background: url(../images/background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reserve form {
+    margin: 0 auto 2rem auto;
+    max-width: 60rem;
+    border-radius: var(--border-hover);
+    padding: 3rem;
+    border: var(--border);
+}
+.reserve form .box {
+    width: 100%;
+    border: var(--border);
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    background: none;
+    margin: 1rem;
+    text-transform: none;
+    color: var(--title-color);
+}
+.reserve form .box:focus{
+    border: var(--border-hover);
+}
+
+.reserve form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+/********************FOOTERRRRRRRRRRRRRRRRRRRRRRRRRR*/
+.footer{
+    background-color: var(--first-color);
+}
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 1.2rem;
+   
+
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--text-color-light);
+}
+.footer .box-container .box a{
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 1rem ;
+    color: var(--text-color);
+}
+
+
+/*==================media queres============*/
+@media screen and (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header {
+        padding:2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .heading {
+        font-size: 6rem;
+    }
+    .heading span {
+        font-size: 2.3rem;
+    }
+    #mn-btn{
+        display: initial;
+    }
+    #mn-btn.bx-x {
+        transform: rotate(180deg);
+    }
+    header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #f4f4f4;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    header .navbar a{
+    display: block;
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    }
+    .home {
+        text-align: center;
+    }
+    .home .rw .content  h3{
+        font-size: 4rem;
+    }
+    .menu .box-container .box img {
+        margin-left: 0;
+        margin-top: -4rem;
+        flex-flow: column;
+        text-align: center;
+    }
+    .menu .box-container .box img {
+        margin-left: 0;
+        margin-top: -4rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}
