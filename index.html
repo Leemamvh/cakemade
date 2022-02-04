@@ -13,192 +13,179 @@
 
 <body>
     <!---------------header---------------->
-<header>
-        <div id="mn-btn"
-             class='bx bx-menu'>
-        </div>
-
-        <a href="#" class="logo">Cakemade Bakery<span>.</span></a>
+<section class="header">
         <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#reserve">Book</a>
-        </nav>    
-            <a href="#reserve" class="btn">Book Now</a>
-</header>
-
-            <!--------------home main-->
-<section class="home" id="home">
-
-        <div class="rw">
-
-            <div class="content">
-                <h3>Delicious treats for you.</h3>
-                <a href="#menu" class="btn">See Menu</a>
+            <a href="#" class="logo">Cakemade Bakery<span>.</span></a>
+            <div class="nav-link" id="navLinks">
+                <i class='bx bx-x' onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About</a></li> 
+                <li><a href="menu.html">Menu</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
             </div>
-        </div>
+            <i class='bx bx-menu' onclick="showMenu()"></i>
+        </nav>   
 
-</section>
+        <div class="content">
+            <h1>Delicious treats for you.</h1>
+            <p>Create happy and satisfying memories with a collection of pastries and beverages<br> that are designed to attract and enchant one's senses.</p>
+            <a href="" class="head-btn">View Menu</a>
+     </div>
+
+ </section>
+
 
 <!--------------aboutttttttttttttt-->
-<section class="about" id="about">
-        <h1 class="heading">About Us <span>Our Story</span></h1>
+<section class="about">
+        <h1>What we offer</h1>
+        <p>  Our goal is to open a bakery that prepares the highest quality baked items
+             from scratch on site, and where both staff and customers feel welcome.</p>
 
-        <div class="rw">
-
-            <div class="image">
-                <img src="./images/aboutus.jpg" alt="">
-            </div>
-
-            <div class="content">
-                <h3 class ="title">What makes us different</h3>
-                <p>PROVIDING QUALITY BAKED GOODS FOR ALL CUSTOMERS
-                    Our mission is to create a bakery that makes the
-                     best quality baked goods on site from scratch, 
-                     and where both employees and customers would feel comfortable.</p>
-                <a href="#" class="btn">Read here</a>
-
-                <div class="icons-container">
-                    <div class="icons">
-                        <img src="images/coffee-bean.png" alt="">
-                        <h3>quality products</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="images/cake.png" alt="">
-                        <h3>catering services</h3>
-                    </div>
-                    <div class="icons">
-                        <img src="images/ice-cream-cup.png" alt="">
-                        <h3>quality desserts</h3>
-                    </div>
+                <div class="row">
+                    <div class="title-col">        
+                        <h3>Quality Products</h3>
+                        <p>All of our cakes,pastries and coffee are guaranteed to of the highest
+                        quality because they produced using the freshest ingredients.</p>
                 </div>
-            </div>
-
+               
+                    <div class="title-col">        
+                        <h3>Catering Services</h3>
+                        <p>Our bakery also offers exceptional catering
+                        services for special events and occasions.</p>
+                </div>
+              
+                    <div class="title-col">        
+                        <h3>Welcome anytime</h3>
+                        <p>We offer you sweet and savory pastry breaks throughout the day,
+                         with fresh and healthy products!</p>
+                </div>
         </div>
-
+                    
 </section>
 
             <!----menuuuuuuuuuuuuuuuuuuuuuu-->
-<section class="menu" id="menu">
+<section class="menu">
+        <h1> Something for everyone</h1>
+         <p>Our menu changes with the seasons to help you explore new flavor combinations.</p>
+        
+         <div class="row">
+             <div class="menu-col">
+                 <img src="./images/bread.jpg">
+                 <div class="layer">
+                     <h3>Bread</h3>
+                 </div>
+             </div>
 
-        <h1 class="heading"> our menu <span>special menu</span></h1>
+             <div class="menu-col">
+                 <img src="./images/cakes.jpg">
+                 <div class="layer">
+                     <h3>Cakes</h3>
+                 </div>
+             </div>
 
-         <div class="box-container">
+             <div class="menu-col">
+                 <img src="./images/desserts.jpg">
+                 <div class="layer">
+                     <h3>Desserts</h3>
+                 </div>
+             </div>
 
-                    <a href="#" class="box">
-                        <img src="./images/ckbg.png" alt="">
-                        <div class="content">
-                        <h3>Gen Z's favorite</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
-                        <span>N3000.00</span>
-                    </div>
-                 </a>
+             <div class="menu-col">
+                 <img src="./images/coffeee.jpg">
+                 <div class="layer">
+                     <h3>Latte</h3>
+                 </div>
+             </div>
 
-                 <a href="#" class="box">
-                    <img src="./images/btea.png" alt="">
-                    <div class="content">
-                    <h3>Bubble Tea</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
-                    <span>N3000.00</span>
-                </div>
-             </a>
+             <div class="menu-col">
+                 <img src="./images/pastry.jpg">
+                 <div class="layer">
+                     <h3>Pastries</h3>
+                 </div>
+             </div>
 
-                 <a href="#" class="box">
-                <img src="./images/delcook.png" alt="">
-                <div class="content">
-                <h3>Champagne cookies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
-                <span>N3000.00</span>
-                </div>
-            </a>
-
-              <a href="#" class="box">
-            <img src="./images/hamburger.png" alt="">
-            <div class="content">
-            <h3>Hamming burger</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
-            <span>N3000.00</span>
-            </div>
-        </a>
-
-            <a href="#" class="box">
-            <img src="./images/coffee.png" alt="">
-            <div class="content">
-            <h3>Late latte</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
-            <span>N3000.00</span>
-            </div>
-        </a>
-
-            <a href="#" class="box">
-            <img src="./images/pancakes.png" alt="">
-            <div class="content">
-            <h3>Pancakes</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
-            <span>N3000.00</span>
-        </div>
-    </a>
-</div>
+         </div>
      
 </section>
-           
-            <!------------contact-------------->
-<section class="reserve" id="reserve">
 
-    <h1 class="heading"> reserve <span>Make your reservation</span></h1>
+<section class="services">
+    <h1>Other Specialties</h1>
+    <p></p>
 
-    <form action="https://formspree.io/f/mjvlywkn"
-    method="POST">
-    
-    <input type="text" name="name" placeholder="your name" required="" class="box">
-    <input type="email" name="email" placeholder="your email" required="" class="box">
-    <input type="number" placeholder="your number" number="number" class="box">
+    <div class="row">
+        <div class="services-col">
+            <img src="./images/redv.jpg">
+            <h3>Birthday Cakes</h3>
+            <p>We provide a variety of bithday cakes for any party.</p>
+        </div>
 
-    <textarea name="" placeholder="your message" class="box" id="" cols="30" rows="10"></textarea>
+        <div class="services-col">
+            <img src="./images/cakesweet.jpg">
+            <h3>Party Desserts</h3>
+            <p>Nothing tastes better than a dessert with a variety of flavors.</p>
+        </div>
 
-    <input type="submit" value="send" class="btn">
+        <div class="services-col">
+            <img src="./images/cookies.jpg">
+            <h3>Special Cookies</h3>
+            <p>Want to make your day unforgettable? Then you need to order our cookies!</p>
+        </div>
+    </div>
+</section>
 
-</form>
+
+<!-------------cta---------------->
+<section class="callto">
+   <h1>Easy to find us</h1>
+   <a href="" class="head-btn">Contact Us</a>
 </section>
 
        <!-----------footer-------------->
-<section class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>Contact Us</h3>
-            <a href="#"> <i class='bx bxs-phone'></i> +234363856451</a>
-            <a href="#"> <i class='bx bxs-envelope'></i> cakemadebakery@gmail.com</a>
-            <a href="#"> <i class='bx bx-map'></i> Ojodu,Lagos, Nigeria</a>
-
-        </div>
-
-        <div class="box">
-            <h3>Quick links</h3>
-            <a href="#"> <i class='bx bx-right-arrow-alt'></i> home</a>
-            <a href="#"> <i class='bx bx-right-arrow-alt'></i> about</a>
-            <a href="#"> <i class='bx bx-right-arrow-alt'></i> menu</a>
-            <a href="#"> <i class='bx bx-right-arrow-alt'></i> contact</a>
-        </div>
-
-        <div class="box">
-            <h3>Socials</h3>
-            <a href="https://www.instagram.com/cakemadeng"> <i class='bx bxl-instagram'></i> instagram</a>
-            <a href="#"> <i class='bx bxl-facebook'></i> facebook</a>
-        </div>
-        
-    </div>
-
-     <div class="copyright">
-        &copy; Cakemadebakery 2021
-</div>
+       <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#"> <i class='bx bxs-phone'></i> +234363856451</a>
+                <a href="#"> <i class='bx bxs-envelope'></i> cakemadebakery@gmail.com</a>
+                <a href="#"> <i class='bx bx-map'></i> Ojodu,Lagos, Nigeria</a>
     
-</section>
-
-
+            </div>
+    
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> home</a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> about</a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> menu</a>
+                <a href="#"> <i class='bx bx-right-arrow-alt'></i> contact</a>
+            </div>
+    
+            <div class="box">
+                <h3>Socials</h3>
+                <a href="https://www.instagram.com/cakemadeng"> <i class='bx bxl-instagram'></i> instagram</a>
+                <a href="#"> <i class='bx bxl-facebook'></i> facebook</a>
+            </div>
+            
+        </div>
+    
+         <div class="copyright">
+            &copy; Cakemadebakery 2021
+    </div>
+        
+    </section>
 
 <!----main javascript-->
-<script src="js/main.js"></script>
+<script>
+var navLinks = document.getElementById("navLinks");
 
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+</script>
+   
 </body>
 </html>
